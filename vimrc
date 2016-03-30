@@ -32,10 +32,11 @@ colorscheme jellybeans
 " ctrl+spaceでcpp整形.
 map <Nul> <Plug>(operator-clang-format)
 
-" c++11を使用する.
+" 構文チェック.
 let g:clang_user_options='-std=c++11'
 let g:syntastic_cpp_compiler='clang++'
 let g:syntastic_cpp_compiler_options='-std=c++11'
+let g:syntastic_cpp_no_default_include_dirs=1
 
 " 全角スペース可視化.
 function! ZenkakuSpace()
