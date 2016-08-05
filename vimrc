@@ -29,7 +29,7 @@ NeoBundleCheck
 set t_Co=256
 colorscheme jellybeans
 
-" ctrl+spaceでcpp整形.
+" ctrl+spaceでc++整形.
 map <Nul> <Plug>(operator-clang-format)
 
 " 構文チェック.
