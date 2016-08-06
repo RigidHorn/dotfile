@@ -1,8 +1,8 @@
-sudo yum install -y vim
-sudo yum install -y gcc-c++
-sudo yum install -y gdb
-sudo yum install -y clang
-sudo yum install -y lynx
+sudo yum -y install vim
+sudo yum -y install gcc-c++
+sudo yum -y install gdb
+sudo yum -y install clang
+sudo yum -y install lynx
 
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
