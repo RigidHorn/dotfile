@@ -37,6 +37,7 @@ let g:clang_user_options='-std=c++11'
 let g:syntastic_cpp_compiler='clang++'
 let g:syntastic_cpp_compiler_options='-std=c++11'
 let g:syntastic_check_on_open=1
+let g:syntastic_cpp_check_header=1
 let g:syntastic_cpp_no_default_include_dirs=1
 
 " 全角スペース可視化.
