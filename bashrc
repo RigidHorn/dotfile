@@ -2,11 +2,8 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
-auto_cdls()
+cdls ()
 {
-  if [ "$OLDPWD" != "$PWD" ]; then
-    ls
-    OLDPWD="$PWD"
-  fi
+  \cd "$@" && ls
 }
-PROMPT_COMMAND="$PROMPT_COMMAND"$'\n'auto_cdls
+alias cd="cdls"
