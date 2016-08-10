@@ -7,3 +7,5 @@ cdls ()
   \cd "$@" && ls
 }
 alias cd="cdls"
+
+alias tmux='tmux -2'
