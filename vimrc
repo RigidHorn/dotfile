@@ -1,11 +1,11 @@
 if 0 | endif
 
 if has('vim_starting')
-  if &compatible
-    set nocompatible
-  endif
+	if &compatible
+		set nocompatible
+	endif
 
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+	set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -42,20 +42,19 @@ let g:syntastic_cpp_no_default_include_dirs=1
 
 " 全角スペース可視化.
 function! ZenkakuSpace()
-  highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
+	highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
 endfunction
 if has('syntax')
-  augroup ZenkakuSpace
-    autocmd!
-    autocmd ColorScheme       * call ZenkakuSpace()
-    autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
-  augroup END
-  call ZenkakuSpace()
+	augroup ZenkakuSpace
+		autocmd!
+		autocmd ColorScheme       * call ZenkakuSpace()
+		autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+	augroup END
+	call ZenkakuSpace()
 endif
 
 set number
 set ambiwidth=double
-set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0
