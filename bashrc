@@ -1,10 +1,10 @@
 if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
+	. /etc/bashrc
 fi
 
 cdls ()
 {
-  \cd "$@" && ls
+	\cd "$@" && ls
 }
 alias cd="cdls"
 
