@@ -9,3 +9,5 @@ cdls ()
 alias cd="cdls"
 
 alias tmux='tmux -2'
+
+ls
