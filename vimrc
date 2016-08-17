@@ -13,7 +13,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'kana/vim-operator-user'
 NeoBundle 'rhysd/vim-clang-format'
