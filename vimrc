@@ -29,6 +29,10 @@ NeoBundleCheck
 set t_Co=256
 colorscheme jellybeans
 
+" 引数なしで起動した場合、nerdtreeを起動.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " ctrl+spaceでc++整形.
 map <Nul> <Plug>(operator-clang-format)
 
