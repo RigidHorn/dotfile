@@ -74,3 +74,7 @@ set virtualedit=block
 
 " shift-oの速度を上げる。
 set ttimeoutlen=75
+
+" tmux上で起動した時の背景の色のムラを修正。
+" しかし右下の半角一文字分だけ塗りつぶされない。
+set t_ut=
