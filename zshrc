@@ -124,3 +124,6 @@ esac
 
 # とりあえずls。
 ls
+
+# tmuxつけようか。
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
