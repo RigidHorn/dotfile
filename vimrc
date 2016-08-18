@@ -71,3 +71,6 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set nrformats-=octal
 set history=50
 set virtualedit=block
+
+" shift-oの速度を上げる。
+set ttimeoutlen=75
