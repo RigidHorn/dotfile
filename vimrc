@@ -33,8 +33,8 @@ colorscheme jellybeans
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" C-nでnerdtreeを起動.
-map <C-n> :NERDTreeToggle<CR>
+" nerdtree起動ショートカット.
+map <C-z> :NERDTreeToggle<CR>
 
 " ctrl+spaceでc++整形.
 map <Nul> <Plug>(operator-clang-format)
