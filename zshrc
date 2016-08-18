@@ -90,6 +90,8 @@ alias df="df -h"
 
 alias su="su -l"
 
+alias view="vim -R"
+
 cdls ()
 {
   \cd "$@" && ls
